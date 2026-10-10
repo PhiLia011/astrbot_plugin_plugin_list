@@ -1,0 +1,80 @@
+{
+  "use_remote_template": {
+    "description": "使用 WebUI 的文转图 HTML 模板",
+    "type": "bool",
+    "hint": "开启后通过远端 t2i 服务套用 data/t2i_templates 里的模板；官方端点不稳定时会自动退回本地渲染（可能多等十几秒）",
+    "default": false
+  },
+  "template_name": {
+    "description": "模板名",
+    "type": "string",
+    "hint": "留空跟随全局“文转图模板”设置；也可填自定义模板名，如 plugin_list（仅在上方开关开启时生效）",
+    "default": ""
+  },
+  "background_image": {
+    "description": "图片底图",
+    "type": "string",
+    "hint": "留空=回退核心默认渲染；支持 http(s) 图片链接、绝对路径、相对插件目录的路径。默认用内置渐变底图 assets/bg_default.jpg，换成你自己的图即可",
+    "default": "assets/bg_default.jpg"
+  },
+  "background_overlay": {
+    "description": "底图压暗程度(%)",
+    "type": "int",
+    "hint": "0~90，整张图的压暗程度；文字区域另有一层渐变压暗",
+    "default": 15
+  },
+  "padding": {
+    "description": "四周留白(px)",
+    "type": "int",
+    "hint": "0~240，文字与图片边缘的距离",
+    "default": 48
+  },
+  "font_size": {
+    "description": "字号(px)",
+    "type": "int",
+    "hint": "0=自动（按图片宽度与下面的高度占比选字号）；填具体值则固定该字号，放不下会向下延展画布",
+    "default": 0
+  },
+  "text_height_limit": {
+    "description": "文字最多占图片高度(%)",
+    "type": "int",
+    "hint": "30~100，仅对“压在图上”有意义：文字超过该高度就改走下方延展区，不缩小字号",
+    "default": 100
+  },
+  "layout": {
+    "description": "排版方式",
+    "type": "string",
+    "hint": "auto=文字能压在图上就压，装不下就在图片下方延展画布（默认，优先保证文字可读）；overlay=必须压在图上，装不下才缩字号；below=文字始终放在图片下方的延展区",
+    "default": "auto"
+  },
+  "columns": {
+    "description": "文字列数",
+    "type": "int",
+    "hint": "1 或 2。双列能减少高度：不想让图变长时用 overlay + 2 列，字号可以更大（实测同一张图 24px vs 单列 20px）",
+    "default": 1
+  },
+  "line_spacing": {
+    "description": "行距(%)",
+    "type": "int",
+    "hint": "100~240，默认 145",
+    "default": 145
+  },
+  "text_color": {
+    "description": "文字颜色",
+    "type": "string",
+    "hint": "十六进制，例如 #FFFFFF / #F2F6FF",
+    "default": "#FFFFFF"
+  },
+  "text_position": {
+    "description": "文字位置",
+    "type": "string",
+    "hint": "top=顶部、center=居中、bottom=底部（默认，保留人像上半部分）",
+    "default": "bottom"
+  },
+  "scrim_opacity": {
+    "description": "文字区渐变压暗(%)",
+    "type": "int",
+    "hint": "0~100，文字区顶部短渐变过渡、其余均匀压暗；越大文字越清晰，0=只靠描边",
+    "default": 60
+  }
+}
