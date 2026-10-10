@@ -3,6 +3,7 @@
 ## 1.2.1
 
 - 仓库随插件附带示例底图 `assets/bg_user.png`，并把它设为默认底图；沿用不惯可在配置里清空这一项，改用渐变底图 `assets/bg_default.jpg`。
+- 许可证由 MIT 改为 GNU Affero General Public License v3.0（AGPL-3.0），与 AstrBot 本体保持一致。
 
 ## 1.2.0
 

@@ -78,3 +78,13 @@
 若要用 HTML 模板：本插件已附一份 `t2i_template/plugin_list.html`（已放入 `data/t2i_templates/plugin_list.html`），
 可在 WebUI「文转图模板」里看到并继续修改；模板里把 `--bg-image` 换成自己的图片链接或 base64 即可换底图。
 启用后只影响本插件的两张图，不会改动全局模板。
+
+## 许可证
+
+本项目以 **GNU Affero General Public License v3.0（AGPL-3.0）** 发布，全文见 [LICENSE](LICENSE)。
+Copyright (C) 2026 PhiLia011
+
+也就是说：你可以自由使用、修改和分发本插件，但**修改后再分发（包括把它架成在线服务供他人使用）必须同样以 AGPL-3.0 开源**，
+并保留版权声明。这与 AstrBot 本体（AGPL-3.0）保持一致。
+
+`assets/` 下的示例底图仅作为默认出图素材随插件附带，不在上述代码许可的授权范围内；用于其他用途请自行确认版权。
