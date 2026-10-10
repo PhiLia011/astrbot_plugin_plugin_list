@@ -35,7 +35,7 @@ SUB_PREFIX = "├ "
 DEFAULT_CONFIG: dict[str, Any] = {
     "use_remote_template": False,
     "template_name": "",
-    "background_image": "assets/bg_default.jpg",
+    "background_image": "assets/bg_user.png",
     "background_overlay": 15,
     "padding": 48,
     "font_size": 0,

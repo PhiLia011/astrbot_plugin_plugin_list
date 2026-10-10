@@ -13,7 +13,7 @@ desc: |
   其他：
   - 无需配置、无第三方依赖、不保存会话状态，所有用户均可使用。
   - 提示文案中的唤醒前缀会自动跟随当前配置。
-version: 1.2.0
+version: 1.2.1
 author: PhiLia011
 repo: https://github.com/PhiLia011/astrbot_plugin_plugin_list
 astrbot_version: ">=4.16,<5"

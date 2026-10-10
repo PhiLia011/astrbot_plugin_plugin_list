@@ -5,6 +5,3 @@ __pycache__/
 .idea/
 .vscode/
 .DS_Store
-
-# 个人底图不随仓库发布（默认底图是 assets/bg_default.jpg）
-assets/bg_user.png

@@ -14,8 +14,8 @@
   "background_image": {
     "description": "图片底图",
     "type": "string",
-    "hint": "留空=回退核心默认渲染；支持 http(s) 图片链接、绝对路径、相对插件目录的路径。默认用内置渐变底图 assets/bg_default.jpg，换成你自己的图即可",
-    "default": "assets/bg_default.jpg"
+    "hint": "留空=回退核心默认渲染；支持 http(s) 图片链接、绝对路径、相对插件目录的路径。默认用自带的 assets/bg_user.png，换成你自己的图即可（插件也附了渐变底图 assets/bg_default.jpg）",
+    "default": "assets/bg_user.png"
   },
   "background_overlay": {
     "description": "底图压暗程度(%)",
